@@ -1,0 +1,44 @@
+\documentclass[GBK, colorlinks, oneside]{pkuthss}
+\usepackage[backend = biber, style = caspervector, gbk, sorting = none]{biblatex}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\pkuthssinfo{
+	cthesisname = {本科生毕业论文}, ethesisname = {Undergraduate Thesis},
+	ctitle = {\Large{The research on mid-infrared bubble —— N37}}, etitle = {The research on mid-infrared bubble —— N37},
+	cauthor = {陈伟},
+	eauthor = {Chen Wei},
+	studentid = {1100011608},
+	date = {二〇一五年五月},
+	school = {物理学院天文系},
+	cmajor = {天体物理}, emajor = {Astrophysics},
+	direction = {恒星形成},
+	cmentor = {李金增研究员}, ementor = {Prof. Li JinZeng},
+	ckeywords = {红外bubble, 触发恒星形成, N37, $\mathrm{H}_{\mathrm{II}}$区, 星际介质}, ekeywords = {infrared bubble, triggered star formation, N37, $\mathrm{H}_{\mathrm{II}}$ region, ISM}
+}
+
+\addbibresource{thesis.bib}
+
+
+\begin{document}
+    \include{chap/newcommands}
+	\frontmatter
+	\maketitle
+	%\include{chap/copyright}
+	\include{chap/abstract}
+	\tableofcontents
+
+	\mainmatter
+	%\include{chap/introduction}
+	\include{chap/chap1_introduction}
+	%\include{chap/conclusion}
+
+	%\appendix
+	\printbibliography[heading = bibintoc, sorting = ecnty]
+	%\include{chap/encl1}
+
+	\backmatter
+	%\include{chap/acknowledge}
+	%\include{chap/originauth}
+
+\end{document}
+
