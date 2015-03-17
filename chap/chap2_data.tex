@@ -1,0 +1,15 @@
+\chapter{数据}
+\section{PMO 毫米波谱线数据}
+本文的所用的毫米波观测数据\COU(115.272GHz),\COL(110.201GHz) 来自紫金山天文台(Purple Mountain Observatory， PMO)13.7米射电望远镜。望远镜位于青海省，德令哈天文观测站。PMO 13.7 米望远镜装有SIS超导接收装置（密封于杜瓦瓶中），在其前端有$3\times3$的9个beam。其接收频段被分为上下两个边带，在上边带（upper sideband，USB）中，包含有\COU 的数据，而在下边带中（lower sideband， LSB）中同时包含\COL 以及$\textrm{C}^{18}\textrm{O}(1-0)$ 的数据。望远镜的指向精度高于$5''$。在其后端针对每个边带配有带宽为1GHz（包含16384个通道）的傅里叶变换器。对应的速度分辨率分别为$0.16\kms$[\COU]，$0.17\kms$[\COL]，$0.17\kms$[$\textrm{C}^{18}\textrm{O}(1-0)$]。主波束的半高全宽(HPBW)为$54''$，主波束效率分别为0.44[\COU]，0.48{\COL}，11年以后的数据已经自动进行主波束效率的改正，采用的方法为转波轮校准法(chopper-wheel method)\mycite{Ulich}{1976}。
+
+在本文的观测中，观测中心为$\alpha_{2000}=18^h36^m23^s.38$，$\delta_{2000}=-06^d39^m38^s.2$，参考点位置为$\alpha=18^h43^m55^s.85$，$\delta=-07^d16^m23^s.4$（用来减背景）。观测区域大小为$25'\times25'$，所以其范围远远大于N37 覆盖的的区域($\langle\textrm{R}\rangle=1.77 \arcmin$)，故此在实际数据处理中只需抽取合适范围内的数据进行分析。观测时扫描速度为$50''$每秒，积分时间为0.3s，采用OTF(On The Fly)成像模式。我们的观测于2013年一月进行，N37 所在区域在不同时间被重复测量了两次，然后进行加权平均，形成了一个间距为$30''$的cube 数据文件，噪声水平分别为$\sim0.6\textrm{K}$[\COU]，$\sim0.3\textrm{K}$[\COL]。之后的数据的分析与可视化用GILDAS 软件进行处理（CLASS \& GREG package）\mycite{Pety}{2005}。此外，在我们的观测结果中，没有发现明显的$\textrm{C}^{18}\textrm{O}(1-0)$发射，所以本文主要关注前面两条谱线。（e.i. \COU ，\COL）
+
+
+\section{其他波段数据及点源数据}
+除去PMO的\COU ，\COL 谱线数据外，为进行对N37的多波段的观测研究，本文广泛利用了现有的其他波段的资料，其中包括GLIMPSE，MIPSGAL，MAGPIS，BOLOCAM等。
+
+GLIMPSE(Galactic Legacy Infrared Mid-Plane Survey Extraodinaire)\big[\mycite{Benjamin}{2003}，\mycite{Churchwell}{2009}是一个利用Spitzer空间望远镜(Spitzer Space Telescope，SST，\mycite{Werner}{2004})携带的设备IRAC(InfraRed Array Camera)\mycite{Fazio}{2004}的红外科学项目。其巡天范围为银纬在$-1^{\circ}\sim1^{\circ}$内大小为$130^{\circ}$的区域。IRAC的四个波段分别为3.6um，4.5um，5.8um，8.0um，灵敏度分别为0.2,0.2,0.4,0.4mJy。 8.0um波段包含两个多环芳香烃（PAH）发射的峰值波段（7.7um和8.6um），多环芳香烃能使示踪电离波前。3.6um和5.6um也包含多环芳香烃的发射特征 ，但4.5um与其他三个波段不同，其不含多环芳香烃特征，利用其他波段与此波段的比值图能够示踪其能够追踪光致电离氢区（PDR）。同时，GLIMPSE利用点扩散函数(point spread functions,PSFs)，对其观测的点源进行IRAC四个波段的测光，并结合2MASS的点源数据（包含J=1.25um，H=1.65um，Ks=2.17um三个波段数据）\mycite{Skrutskie}{2006}，组成了一个包含7个波段数据的星表。本文采用的点源数据便来自此目录。
+
+MIPSGAL\mycite{Carey}{2009}作为GLIMPSE的补充项目，利用SST的MIPS(Multiband Infrared Photometer，\mycite{Rieke}{2004})设备进行了24um的观测。其观测范围大抵与GLIMPSE相似。其24um数据的空间分辨率为$6''$，灵敏度为0.17mJy。24um辐射能够示踪热尘埃气体。
+
+本文同样使用了MAGPIS\mycite{Helfand}{2006}项目的20cm连续谱数据。为了提高数据精度，消除星际消光影响，MAGPIS结合了Effelsber 100m telescope在1.4GHz和数据和VLA干涉阵的数据，最终使其数据空间分辨率达到$5.4''$，灵敏度达到0.15mJy。 
