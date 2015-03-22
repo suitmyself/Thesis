@@ -1,24 +1,60 @@
-\begin{flushleft}
-\begin{deluxetable}{lcccccccccc}
-\tabletypesize{\tiny} \tablecolumns{10} \tablewidth{0pc}
-\tablecaption{Observed Parameters of $^{13}$CO Cores \label{tbl1}}
-\tablehead{
-\colhead{} &\colhead{}&\colhead{}&\colhead{} & \multicolumn{3}{c}{$^{12}$CO (1-0)} &\multicolumn{3}{c}{$^{13}$CO (1-0)} \\
-\cline{5-7} \cline{8-10} \\
-\colhead{Name} & \colhead{R.A.\tablenotemark{a}}   & \colhead{DEC.\tablenotemark{a}}    & \colhead{$R_{eff}$\tablenotemark{a}} &\colhead{$V_{\mathrm{LSR}}$\tablenotemark{b}} &
-\colhead{$\triangle V (^{12}\mathrm{CO})$\tablenotemark{b}}  & \colhead{$T_{\mathrm{mb}}(^{12}\mathrm{CO})$\tablenotemark{b}}& \colhead{$V_{\mathrm{peak}}$\tablenotemark{b}} &
-\colhead{$\triangle V (^{13}\mathrm{CO})$\tablenotemark{b}}  & \colhead{$T_{\mathrm{mb}}(^{13}\mathrm{CO})$\tablenotemark{b}} \\
-\colhead{ } & \colhead{(h m s)}   & \colhead{(d m s)}   & \colhead{(arcmin)} &\colhead{(km s$^{-1}$)} & \colhead{(km s$^{-1}$)}  & \colhead{(K)}&
-\colhead{(km s$^{-1}$)} & \colhead{(km s$^{-1}$)}  & \colhead{(K)}
-}
-\startdata
+%\begin{flushleft}
+%\begin{deluxetable}{lcccccccccc}
+%\tabletypesize{\tiny} \tablecolumns{10} \tablewidth{0pc}
+%\tablecaption{Observed Parameters of $^{13}$CO Cores \label{tbl1}}
+%\tablehead{
+%\colhead{} &\colhead{}&\colhead{}&\colhead{} & \multicolumn{3}{c}{$^{12}$CO (1-0)} &\multicolumn{3}{c}{$^{13}$CO (1-0)} \\
+%\cline{5-7} \cline{8-10} \\
+%\colhead{Name} & \colhead{R.A.\tablenotemark{a}}   & \colhead{DEC.\tablenotemark{a}}    & \colhead{$R_{eff}$\tablenotemark{a}} &\colhead{$V_{\mathrm{LSR}}$\tablenotemark{b}} &
+%\colhead{$\triangle V (^{12}\mathrm{CO})$\tablenotemark{b}}  & \colhead{$T_{\mathrm{mb}}(^{12}\mathrm{CO})$\tablenotemark{b}}& \colhead{$V_{\mathrm{peak}}$\tablenotemark{b}} &
+%\colhead{$\triangle V (^{13}\mathrm{CO})$\tablenotemark{b}}  & \colhead{$T_{\mathrm{mb}}(^{13}\mathrm{CO})$\tablenotemark{b}} \\
+%\colhead{ } & \colhead{(h m s)}   & \colhead{(d m s)}   & \colhead{(arcmin)} &\colhead{(km s$^{-1}$)} & \colhead{(km s$^{-1}$)}  & \colhead{(K)}&
+%\colhead{(km s$^{-1}$)} & \colhead{(km s$^{-1}$)}  & \colhead{(K)}
+%}
+%\startdata
+%PMO-A & 18:36:40.58 & -6:38:44.20 & 1.6 & 41.29(0.02) & 2.39(0.05) & 30.0 & 41.28(0.01) & 1.77(0.03) & 11.5 \\
+%PMO-B & 18:36:47.78 & -6:35:56.20 & 1.9 & 40.36(0.03) & 2.29(0.06) & 19.4 & 40.3 (0.02) & 1.73(0.05) & 7.2 \\
+%PMO-C & 18:36:28.58 & -6:38:44.20 & 1.2 & 41.40(0.04) & 2.77(0.10) & 20.0 & 41.81(0.02) & 1.92(0.06) & 6.9 \\
+%PMO-D & 18:36:16.58 & -6:37:56.20 & 0.7 & 40.51(0.03) & 3.04(0.08) & 8.5  & 40.66(0.1)  & 2.65(0.21) & 1.7 \\
+%\enddata
+%\tablenotetext{a}{Parameters resulting from  the Clumpfind algorithm; Of these, $R_{eff}=\sqrt{(4A/\pi-\theta_{b}^{2})}/2$ is the deconvolved effective radius, where A is the projected area of
+%each core and $\theta_{b}$ is the beam width.}
+%\tablenotetext{b}{Parameters derived from the Gauss fitting in GILDAS.}
+%\end{deluxetable}
+%\end{flushleft}
+
+\begin{table}
+\begin{center}
+Table 3.1. Observed Parameters of $^{13}$CO Cores
+\end{center}
+\centerline{
+\resizebox{1.3\textwidth}{!}{
+\begin{tabular}{cccccccccc}
+\hline
+\hline
+\rule{0pt}{3ex}
+  &                &                &     & \multicolumn{3}{c}{${}^{12}$CO(1-0)}  & \multicolumn{3}{c}{${}^{13}$CO(1-0)} \\
+\cline{5-7} \cline{8-10}
+\rule{0pt}{3ex}
+Name & R.A.\fa & Decl.\fa & $R_{\textrm{eff}}$\fa & $V_{\textrm{LSR}}$\fb & $\Delta V({}^{12}\textrm{CO})$\fb & $T_{mb}({}^{12}\textrm{CO})$\fb & $V_{\textrm{peak}}$\fb & $\Delta V({}^{13}\textrm{CO})$\fb & $T_{mb}({}^{13}\textrm{CO})$\fb \\
+  &   (h m s)      &  (d m s)       & (arcmin) & (km/s) & (km/s) & (K) & (km/s)  & (km/s) & (K)\\
+\hline
 PMO-A & 18:36:40.58 & -6:38:44.20 & 1.6 & 41.29(0.02) & 2.39(0.05) & 30.0 & 41.28(0.01) & 1.77(0.03) & 11.5 \\
 PMO-B & 18:36:47.78 & -6:35:56.20 & 1.9 & 40.36(0.03) & 2.29(0.06) & 19.4 & 40.3 (0.02) & 1.73(0.05) & 7.2 \\
 PMO-C & 18:36:28.58 & -6:38:44.20 & 1.2 & 41.40(0.04) & 2.77(0.10) & 20.0 & 41.81(0.02) & 1.92(0.06) & 6.9 \\
 PMO-D & 18:36:16.58 & -6:37:56.20 & 0.7 & 40.51(0.03) & 3.04(0.08) & 8.5  & 40.66(0.1)  & 2.65(0.21) & 1.7 \\
-\enddata
-\tablenotetext{a}{Parameters resulting from  the Clumpfind algorithm; Of these, $R_{eff}=\sqrt{(4A/\pi-\theta_{b}^{2})}/2$ is the deconvolved effective radius, where A is the projected area of
-each core and $\theta_{b}$ is the beam width.}
-\tablenotetext{b}{Parameters derived from the Gauss fitting in GILDAS.}
-\end{deluxetable}
-\end{flushleft}
+\hline
+\end{tabular}
+}
+}
+\hspace*{-2cm}
+\rule{0pt}{3ex}
+\resizebox{1.3\textwidth}{!}{
+\fa \zihao{5}{从clumpfind 算法计算出来的参数，$R_{\textrm{eff}}=\sqrt{(4A\pi-\theta_b^2)}/2$为有效半径，其中$A$为core的观测面积，$\theta_b$ 为主波束宽度。}\\
+}
+\hspace*{-1.87cm}
+\fb \zihao{5}{从GILDAS进行高斯拟合得到的参数。}                                                                                                     
+        
+
+
+\end{table}

@@ -1,17 +1,42 @@
-\begin{deluxetable}{ccccccccccc}
-\tabletypesize{\scriptsize} \tablecolumns{9} \tablewidth{0pc}
-\tablecaption{Derived Parameters of $^{13}$CO Cores \label{tbl2}}
-\tablehead{\colhead{Name} & \colhead{R} & \colhead{$\tau_{12}$}& \colhead{$\tau_{13}$} &\colhead{$T_{\mathrm{ex}}$} &\colhead{$\int{T_{\mathrm{mb}}\mathrm{d}v}$\tablenotemark{a}}&\colhead{$N_{^{13}\mathrm{CO}}$}& \colhead{$N_{\mathrm{H}_2}$}& \colhead{$n_{\mathrm{H}_2}$}&\colhead{$M_{\mathrm{LTE}}$} & \colhead{$M_{\mathrm{vir}}$} \\
+%\begin{deluxetable}{ccccccccccc}
+%\hspace*{-3cm}
+%\tabletypesize{\scriptsize} \tablecolumns{9} \tablewidth{0pc}
+%\tablecaption{Derived Parameters of $^{13}$CO Cores \label{tbl2}}
+%\tablehead{\colhead{Name} & \colhead{R} & \colhead{$\tau_{12}$}& \colhead{$\tau_{13}$} &\colhead{$T_{\mathrm{ex}}$} &\colhead{$\int{T_{\mathrm{mb}}\mathrm{d}v}$\tablenotemark{a}}&\colhead{$N_{^{13}\mathrm{CO}}$}& \colhead{$N_{\mathrm{H}_2}$}& \colhead{$n_{\mathrm{H}_2}$}&\colhead{$M_{\mathrm{LTE}}$} & \colhead{$M_{\mathrm{vir}}$} \\
+%
+%\colhead{} &\colhead{(pc)} & \colhead{}& \colhead{}& \colhead{(K)} &\colhead{(K km s$^{-1}$)}  & \colhead{(10$^{16}$ cm$^{-2}$)}  & \colhead{(10$^{22}$cm$^{-2}$)} & \colhead{(10$^{3}$ cm$^{-3}$)} & \colhead{(10$^{3}M_{\odot}$)} & \colhead{(10$^{3}M_{\odot}$)}
+%}
+%
+%\startdata
+%PMO-A & 1.4(0.3) & 21.7 & 0.5 & 32.7 & 21.6(0.3) & 4.00(0.05) & 2.30(0.03) & 2.50(0.49) & 2.20(0.85) & 0.95 \\
+%PMO-B & 1.7(0.3) & 21.0 & 0.5 & 22.0 & 13.4(0.3) & 1.90(0.05) & 1.00(0.03) & 0.99(0.19) & 1.40(0.56) & 1.10 \\
+%PMO-C & 1.1(0.2) & 19.1 & 0.4 & 22.6 & 14.1(0.4) & 2.00(0.05) & 1.10(0.03) & 1.70(0.33) & 0.62(0.24) & 0.84 \\
+%PMO-D & 0.6(0.1) & 10.2 & 0.2 & 11.1 & 4.90(0.4) & 0.48(0.04) & 0.27(0.02) & 0.69(0.13) & 0.05(0.02) & 0.93 \\
+%\enddata
+%\tablenotetext{a}{The peak intensities of \COL resulting from the Clumpfind algorithm.}
+%\tablenotetext{b}{Errors mainly dependent on the uncertainty of the kinetic distance.}
+%\end{deluxetable}
 
-\colhead{} &\colhead{(pc)} & \colhead{}& \colhead{}& \colhead{(K)} &\colhead{(K km s$^{-1}$)}  & \colhead{(10$^{16}$ cm$^{-2}$)}  & \colhead{(10$^{22}$cm$^{-2}$)} & \colhead{(10$^{3}$ cm$^{-3}$)} & \colhead{(10$^{3}M_{\odot}$)} & \colhead{(10$^{3}M_{\odot}$)}
-}
-
-\startdata
+\begin{table}
+\begin{center}
+Table 3.1. Derived Parameters of $^{13}$CO Cores
+\end{center}
+\centerline{
+\resizebox{1.3\textwidth}{!}{
+\begin{tabular}{ccccccccccc}
+\hline\hline
+\rule{0pt}{3ex}
+Name &  R & $\tau_{12}$ & $\tau_{13}$ & $T_{\textrm{ex}}$ & $\int T_{\textrm{mb}}\textrm{d}v$ & $N_{{}^{13}\textrm{CO}}$ & $N_{\textrm{H}_2}$
+& $n_{\textrm{H}_2}$ & $M_{\textrm{LTE}}$  & $M_{\textrm{vir}}$ \\
+  &  (pc)    &      &     &   (K)& (K km $\textrm{s}^{-1}$) & ($10^{16}\textrm{cm}^{-2}$) & ($10^{22}\textrm{cm}^{-2}$) & ($10^{3}\textrm{cm}^{-3}$) & ($10^3M_\odot$) & ($10^3M_\odot$)\\
+\hline
+\rule{0pt}{3ex}
 PMO-A & 1.4(0.3) & 21.7 & 0.5 & 32.7 & 21.6(0.3) & 4.00(0.05) & 2.30(0.03) & 2.50(0.49) & 2.20(0.85) & 0.95 \\
 PMO-B & 1.7(0.3) & 21.0 & 0.5 & 22.0 & 13.4(0.3) & 1.90(0.05) & 1.00(0.03) & 0.99(0.19) & 1.40(0.56) & 1.10 \\
 PMO-C & 1.1(0.2) & 19.1 & 0.4 & 22.6 & 14.1(0.4) & 2.00(0.05) & 1.10(0.03) & 1.70(0.33) & 0.62(0.24) & 0.84 \\
 PMO-D & 0.6(0.1) & 10.2 & 0.2 & 11.1 & 4.90(0.4) & 0.48(0.04) & 0.27(0.02) & 0.69(0.13) & 0.05(0.02) & 0.93 \\
-\enddata
-\tablenotetext{a}{The peak intensities of \COL resulting from the Clumpfind algorithm.}
-\tablenotetext{b}{Errors mainly dependent on the uncertainty of the kinetic distance.}
-\end{deluxetable}
+\hline
+\end{tabular}
+}
+}
+\end{table}
