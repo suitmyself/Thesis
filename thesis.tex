@@ -1,4 +1,4 @@
-\documentclass[GBK, colorlinks, oneside]{pkuthss}
+\documentclass[GBK, colorlinks]{pkuthss} %, oneside
 \usepackage[backend = biber, style = caspervector, gbk, sorting = none]{biblatex}
 \usepackage{amssymb}
 \usepackage{amsmath}
@@ -23,28 +23,29 @@
 
 
 \begin{document}
+    \sloppy
     \include{chap/newcommands}
 	\frontmatter
 	\maketitle
-	%\include{chap/copyright}
-	%\include{chap/abstract}
+	\include{chap/copyright}
+	\include{chap/abstract}
 	\tableofcontents
 
 	\mainmatter
 	%\include{chap/introduction}
-	%\include{chap/chap1_introduction}
-    %\include{chap/chap2_data}
+	\include{chap/chap1_introduction}
+    \include{chap/chap2_data}
     \include{chap/chap3_result}
     \include{chap/chap4_discussion}
-	%\include{chap/chap5_conclusion}
+	\include{chap/chap5_conclusion}
 
-	%\appendix
+	\appendix
 	\printbibliography[heading = bibintoc, sorting = ecnty]
 	%\include{chap/encl1}
 
 	\backmatter
-	%\include{chap/acknowledge}
-	%\include{chap/originauth}
+	\include{chap/acknowledge}
+	\include{chap/originauth}
 
 \end{document}
 
